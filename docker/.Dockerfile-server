@@ -1,0 +1,16 @@
+from python:3.8
+
+# copy code
+COPY api/ api/
+COPY assets/model assets/model
+COPY ml_experiments/ ml_experiments/
+COPY poetry.lock poetry.lock
+COPY pyproject.toml pyproject.toml
+COPY scripts/ scripts/
+
+# poetry install
+RUN pip install --no-cache-dir poetry
+RUN poetry install
+
+# getting the server up
+CMD poetry run uvicorn api.main:app --reload --workers 1 --host 0.0.0.0 --port 8008

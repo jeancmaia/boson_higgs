@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "boson_higgs"
+version = "0.1.0"
+description = ""
+authors = ["JeanCMaia"]
+
+[tool.poetry.dependencies]
+python = ">=3.8, <3.10"
+scikit-learn = "^1.1.1"
+dask = "^2022.5.2"
+pandas = "^1.4.2"
+statsmodels = "^0.13.2"
+jupyterlab = "^3.4.2"
+matplotlib = "^3.5.2"
+seaborn = "^0.11.2"
+joblib = "^1.1.0"
+yellowbrick = "^1.4"
+requests = "^2.28.0"
+xgboost = "^1.6.1"
+lightgbm = "^3.3.2"
+feature-engine = "^1.4.1"
+numpy = "1.22"
+llvmlite = "0.36"
+shap = "^0.41.0"
+dask-ml = "^2022.5.27"
+fastapi = "^0.79.0"
+uvicorn = "^0.18.2"
+pydantic = "^1.9.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+mlxtend = "^0.20.0"
+
+[tool.poetry.scripts]
+train-model = "ml_experiments.main:run"
+data-pull = "scripts.data_pulling"
+data-treatment = "scripts.features_handling"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
