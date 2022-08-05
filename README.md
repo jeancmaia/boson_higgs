@@ -64,4 +64,4 @@ docker:
 -----
 #### 7 - To request the model
 
-The notebook 'nbks/API_requests_test.ipynb' has a simple way to request the API.
+The notebook `nbks/API_requests_test.ipynb` has a simple way to request the API.
