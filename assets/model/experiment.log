@@ -1,0 +1,19 @@
+2022-08-03 18:04:56,664 - Starting hold-out validation with percentage test size: 0.5
+2022-08-03 18:04:56,672 - Holdout splitted successfully
+2022-08-03 18:04:56,673 - Holdout split finished succesfully!
+2022-08-03 18:04:56,673 - Starting model fitting step
+2022-08-03 18:05:36,840 - Fitting the model on a dataset w shape: (5496992, 28)
+2022-08-03 18:05:36,840 - Features Model: Index(['1', '2', '4', '6', '7', '8', '10', '11', '12', '14', '15', '16', '18',
+       '19', '20', '23_clip_log', '0_log', '3_log', '5_log', '9_log', '13_log',
+       '17_log', '21_log', '22_log', '24_log', '25_log', '26_log', '28_log'],
+      dtype='object')
+2022-08-03 18:07:20,944 - XGboost algorithm was fitted successfully
+2022-08-03 18:07:20,961 - Starting validation metrics on train dataset
+2022-08-03 18:11:46,603 - Classification report has finished succesfully
+2022-08-03 18:11:46,720 - Metrics on train dataset crafted successfully
+2022-08-03 18:11:46,720 - Starting validation metrics on test dataset
+2022-08-03 18:16:36,876 - Classification report has finished succesfully
+2022-08-03 18:16:36,982 - Metrics on test dataset crafted successfully
+2022-08-03 18:16:36,982 - Final evaluation finished succesfully
+2022-08-03 18:16:36,982 - Setting the optimal threshold as 0.4
+2022-08-03 18:16:36,983 - Model training finished succesfully!
